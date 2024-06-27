@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Tastes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/026/466/926/non_2x/pizza-web-banner-with-copy-space-generative-ai-free-photo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            background-color: rgba(211, 47, 47, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .recommend-btn {
+            background-color: #d32f2f;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+        .recommend-btn:hover {
+            background-color: #b71c1c;
+            transform: scale(1.05);
+        }
+        .animation {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .food {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            animation: float 3s infinite ease-in-out;
+        }
+        .food:nth-child(1) {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1046/1046784.png');
+        }
+        .food:nth-child(2) {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/184/184515.png');
+            animation-delay: 1s;
+        }
+        .food:nth-child(3) {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1404/1404945.png');
+            animation-delay: 2s;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        footer {
+            background-color: rgba(211, 47, 47, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Traditional Tastes</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Discover the Best Restaurants</h2>
+            <p>Explore the finest dining experiences in your city. Our recommendations are curated to ensure you have a delightful meal every time.</p>
+            <a href="/recommend" class="recommend-btn">Get Recommendations</a>
+        </section>
+        <section class="animation">
+            <div class="food"></div>
+            <div class="food"></div>
+            <div class="food"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Traditional Tastes. All rights reserved.</p>
+    </footer>
+    <script>
+        function getRecommendations() {
+            alert("Here are your recommendations!");
+        }
+    </script>
+</body>
+</html>
